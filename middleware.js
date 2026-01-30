@@ -26,7 +26,7 @@ export default async function middleware(req) {
     requestHeaders.set('X-Forwarded-For', forwardedFor);
   }
 
-  return NextResponse.rewrite(url, {
+ {
     request: {
       headers: requestHeaders,
     },
